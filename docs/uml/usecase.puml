@@ -1,0 +1,9 @@
+@startuml
+actor User
+
+rectangle "COLORS Web App" {
+    User --> (Login)
+    User --> (Search Colors)
+    User --> (Add Color)
+}
+@enduml
