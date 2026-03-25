@@ -1,0 +1,28 @@
+@startuml
+start
+
+:User enters login credentials;
+:Send POST request to Login.php;
+
+if (Valid login?) then (yes)
+  :Return user ID;
+  :Display color page;
+
+  :User searches for colors;
+  :Send POST to SearchColors.php;
+  :Query database;
+  :Return matching colors;
+  :Display results;
+
+  :User adds new color;
+  :Send POST to AddColor.php;
+  :Insert into database;
+  :Refresh color list;
+
+else (no)
+  :Return error message;
+  :Display login error;
+endif
+
+stop
+@enduml
