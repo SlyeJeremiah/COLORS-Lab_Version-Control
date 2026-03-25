@@ -1,0 +1,29 @@
+@startuml
+
+class Users {
+    ID : int
+    FirstName : varchar
+    LastName : varchar
+    Login : varchar
+    Password : varchar
+}
+
+class Colors {
+    ID : int
+    Name : varchar
+    UserID : int
+}
+
+class Contacts {
+    ID : int
+    FirstName : varchar
+    LastName : varchar
+    Phone : varchar
+    Email : varchar
+    UserID : int
+}
+
+Users "1" -- "0..*" Colors : owns
+Users "1" -- "0..*" Contacts : owns
+
+@enduml
