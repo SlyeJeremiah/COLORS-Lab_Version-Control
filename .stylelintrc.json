@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "color-hex-length": "short",
+    "no-empty-source": null,
+    "selector-id-pattern": null
+  }
+}

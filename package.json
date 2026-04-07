@@ -1,0 +1,32 @@
+{
+  "name": "colors-lab_version-control",
+  "version": "1.0.0",
+  "description": "In the COLORS Lab, you have already designed and implemented a web application using the LAMP stack -- this assignment focuses on organizing and documenting your existing work using version control.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlyeJeremiah/COLORS-Lab_Version-Control.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SlyeJeremiah/COLORS-Lab_Version-Control/issues"
+  },
+  "homepage": "https://github.com/SlyeJeremiah/COLORS-Lab_Version-Control#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
