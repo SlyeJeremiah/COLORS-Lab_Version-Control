@@ -183,3 +183,26 @@ function searchColor()
 	}
 	
 }
+
+function formatColor(color) {
+    if (!color) return "";
+
+    return color
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z]/g, ""); // keep only letters
+}
+
+function isValidColor(color) {
+    if (!color) return false;
+
+    const formatted = formatColor(color);
+    return formatted.length > 0;
+}
+
+if (typeof module !== "undefined") {
+    module.exports = {
+        formatColor,
+        isValidColor
+    };
+}
